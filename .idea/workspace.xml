@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b4220f52-c33c-4080-a1c5-9355024c38b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/BuildYourOwnController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/CurrentOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Custom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Deluxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/MainMenuApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/MainMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Meatzza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Pepperoni.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Pizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/PizzaMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Sauce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Seafood.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Size.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/SpecialtyPizzasController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/StoreOrdersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Supreme.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Topping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/BuildYourOwnView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/CurrentOrderView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/MainMenuView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/SpecialtyPizzasView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/StoreOrdersView.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2Xwpm4xC6RCFk0RtR1GgAlVKoDb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_directory_selection": "C:/Users/Kim/IdeaProjects/smProject4/src/main/resources/com/example/smproject4"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b4220f52-c33c-4080-a1c5-9355024c38b2" name="Changes" comment="" />
+      <created>1699550154359</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699550154359</updated>
+    </task>
+    <servers />
+  </component>
+</project>

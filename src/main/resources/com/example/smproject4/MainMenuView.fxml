@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.smproject4.MainMenuController">
+<VBox alignment="CENTER" prefHeight="410.0" prefWidth="480.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.smproject4.MainMenuController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
+   <Pane prefHeight="400.0" prefWidth="440.0">
+      <children>
+         <Button fx:id="orderSpecialityPizzasButton" layoutX="39.0" layoutY="156.0" mnemonicParsing="false" onAction="#onOrderSpecialityClick" text="Order Speciality Pizzas" />
+         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../orderSpecialty.jpg" />
+            </image>
+         </ImageView>
+         <Button fx:id="buildYourOwnPizzaButton" layoutX="255.0" layoutY="155.0" mnemonicParsing="false" onAction="#onBuildYourOwnClick" text="Build Your Own Pizza" />
+         <Button fx:id="currentOrderButton" layoutX="46.0" layoutY="307.0" mnemonicParsing="false" onAction="#onCurrentOrderClick" text="Current Order" />
+         <Button fx:id="storeOrdersButton" layoutX="310.0" layoutY="307.0" mnemonicParsing="false" onAction="#onStoreOrdersClick" text="Store Orders" />
+      </children>
+   </Pane>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Label fx:id="welcomeText" />
 </VBox>

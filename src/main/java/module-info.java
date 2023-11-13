@@ -8,7 +8,6 @@ module com.example.smproject4 {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
     opens com.example.smproject4 to javafx.fxml;

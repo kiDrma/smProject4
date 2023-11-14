@@ -2,8 +2,9 @@ package com.example.smproject4;
 
 public class Custom extends Pizza{
     private final double BASE_PRICE = 8.99;
+    private final double TOPPING_PRICE = 1.49;
 
-    private int numberOfToppings;
+    private int numberOfToppings = 0;
 
     /**
      * Constructor using given toppings, given sauce, given size,
@@ -27,7 +28,6 @@ public class Custom extends Pizza{
      * Initializes the arraylist of toppings for a Custom pizza.
      */
     private void initializeToppings(Topping[] toppings){
-        numberOfToppings = 0;
         for (Topping topping : toppings) {
             numberOfToppings++;
             this.toppings.add(topping);
@@ -38,7 +38,7 @@ public class Custom extends Pizza{
      * Determines the price of the Custom pizza.
      * @return price of the pizza.
      */
-    public double price(){ // Must be edited for the # of toppings I think?
+    public double price(){
         double price = BASE_PRICE;
         if(this.size == Size.MEDIUM){
             price += MEDIUM_PRICE_INCREASE;
@@ -52,6 +52,7 @@ public class Custom extends Pizza{
         if(extraSauce == true){
             price += EXTRA_PRICE_INCREASE;
         }
+        price += numberOfToppings * TOPPING_PRICE;
         return price;
     }
 }

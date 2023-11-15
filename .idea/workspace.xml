@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4220f52-c33c-4080-a1c5-9355024c38b2" name="Changes" comment="uo">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/BuildYourOwnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/BuildYourOwnController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/CurrentOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/CurrentOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Custom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Custom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/SpecialtyPizzasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/SpecialtyPizzasController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/StoreOrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/StoreOrdersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/BuildYourOwnView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/BuildYourOwnView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/CurrentOrderView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/CurrentOrderView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/MainMenuView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/MainMenuView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/SpecialtyPizzasView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/SpecialtyPizzasView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/StoreOrdersView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/StoreOrdersView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

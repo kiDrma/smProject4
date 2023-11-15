@@ -77,8 +77,6 @@ public class BuildYourOwnController {
         return output;
     }
 
-
-
     @FXML
     private RadioButton smallButton;
     @FXML
@@ -93,34 +91,4 @@ public class BuildYourOwnController {
     private CheckBox extraCheeseBox;
     @FXML
     private CheckBox extraSauceBox;
-    @FXML
-    private ListView toppingsList;
-    @FXML
-    private TextField total;
-    @FXML
-    private CheckBox sausage;
-    @FXML
-    private CheckBox pepperoni;
-    @FXML
-    private CheckBox greenPepper;
-    @FXML
-    private CheckBox onion;
-    @FXML
-    private CheckBox mushroom;
-    @FXML
-    private CheckBox ham;
-    @FXML
-    private CheckBox blackOlives;
-    @FXML
-    private CheckBox beef;
-    @FXML
-    private CheckBox shrimp;
-    @FXML
-    private CheckBox squid;
-    @FXML
-    private CheckBox crabMeat;
-    @FXML
-    private CheckBox bananas;
-    @FXML
-    private CheckBox iceCream;
 }

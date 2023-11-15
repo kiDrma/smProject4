@@ -23,21 +23,21 @@
                <image>
                   <Image url="@../../../empty.png" />
                </image></ImageView>
-            <RadioButton fx:id="smallButton" layoutX="13.0" layoutY="29.0" mnemonicParsing="false" text="Small">
+            <RadioButton fx:id="smallButton" layoutX="13.0" layoutY="29.0" mnemonicParsing="false" onAction="#displayTotal" text="Small">
                <toggleGroup>
                   <ToggleGroup fx:id="SizeGroup" />
                </toggleGroup>
             </RadioButton>
-            <RadioButton fx:id="mediumButton" layoutX="13.0" layoutY="52.0" mnemonicParsing="false" text="Medium" toggleGroup="$SizeGroup" />
-            <RadioButton fx:id="LargeButton" layoutX="13.0" layoutY="74.0" mnemonicParsing="false" text="Large" toggleGroup="$SizeGroup" />
+            <RadioButton fx:id="mediumButton" layoutX="13.0" layoutY="52.0" mnemonicParsing="false" onAction="#displayTotal" text="Medium" toggleGroup="$SizeGroup" />
+            <RadioButton fx:id="largeButton" layoutX="13.0" layoutY="74.0" mnemonicParsing="false" onAction="#displayTotal" text="Large" toggleGroup="$SizeGroup" />
             <ComboBox fx:id="comboBox" layoutX="17.0" layoutY="181.0" prefHeight="25.0" prefWidth="141.0" promptText="Select Pizza Type" visibleRowCount="5" />
             <TextField fx:id="total" editable="false" layoutX="421.0" layoutY="290.0" prefHeight="25.0" prefWidth="91.0" />
             <Text layoutX="387.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:" />
-            <CheckBox fx:id="extraCheese" layoutX="13.0" layoutY="115.0" mnemonicParsing="false" text="Extra Cheese" />
-            <CheckBox fx:id="extraSauce" layoutX="14.0" layoutY="142.0" mnemonicParsing="false" text="Extra Sauce" />
+            <CheckBox fx:id="extraCheese" layoutX="13.0" layoutY="115.0" mnemonicParsing="false" onAction="#displayTotal" text="Extra Cheese" />
+            <CheckBox fx:id="extraSauce" layoutX="14.0" layoutY="142.0" mnemonicParsing="false" onAction="#displayTotal" text="Extra Sauce" />
             <ListView fx:id="toppingsList" layoutX="182.0" layoutY="46.0" prefHeight="158.0" prefWidth="117.0" />
             <Text layoutX="216.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toppings" />
-            <Button fx:id="addToOrderButton" layoutX="422.0" layoutY="328.0" mnemonicParsing="false" text="Add To Order" />
+            <Button fx:id="addToOrderButton" layoutX="422.0" layoutY="328.0" mnemonicParsing="false" onAction="#onAddToOrderClick" text="Add To Order" />
             <Text fx:id="pizzaName" layoutX="388.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Pizza Selected" />
             <ImageView fx:id="deluxeImage" fitHeight="141.0" fitWidth="191.0" layoutX="346.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>

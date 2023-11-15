@@ -1,5 +1,10 @@
 package com.example.smproject4;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
+import java.util.ArrayList;
+
 public class Seafood extends Pizza{
     private final double BASE_PRICE = 17.99;
 
@@ -10,6 +15,7 @@ public class Seafood extends Pizza{
      * @param extraSauce
      */
     public Seafood(Size size, boolean extraCheese, boolean extraSauce){
+        this.toppings = new ArrayList<>();
         initializeToppings();
         this.sauce = Sauce.ALFREDO;
         this.size = size;

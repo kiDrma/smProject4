@@ -1,4 +1,7 @@
 package com.example.smproject4;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.util.ArrayList;
 
 public abstract class Pizza {
@@ -13,4 +16,8 @@ public abstract class Pizza {
     protected double EXTRA_PRICE_INCREASE = 1;
 
     public abstract double price(); //polymorphism
+
+    public ObservableList<Topping> getToppings(){
+        return FXCollections.observableArrayList(toppings);
+    }
 }

@@ -25,6 +25,7 @@ public class SpecialtyPizzasController implements Initializable {
     private final String SEAFOOD = "Seafood";
     private final String PEPPERONI = "Pepperoni";
     private final String SUPREME = "Supreme";
+    private double dynamicTotal = 0;
     @FXML
     private ComboBox comboBox = new ComboBox<>();
     @FXML
@@ -36,7 +37,7 @@ public class SpecialtyPizzasController implements Initializable {
     @FXML
     private RadioButton mediumButton;
     @FXML
-    private RadioButton LargeButton;
+    private RadioButton largeButton;
     @FXML
     private CheckBox extraCheese;
     @FXML
@@ -73,10 +74,67 @@ public class SpecialtyPizzasController implements Initializable {
                 String pizzaType = (String)comboBox.getValue();
                 pizzaName.setText(pizzaType);
                 displayPizzaImage(pizzaType);
+                displayToppings(pizzaType);
+                displayTotal();
             }
         };
-
         comboBox.setOnAction(event);
+    }
+
+    @FXML
+    protected void displayTotal(){
+        String pizza = (String)comboBox.getValue();
+        dynamicTotal = 0;
+        if(pizza.equals(MEATZZA)){
+            Meatzza meatzza = new Meatzza(getSize(), extraCheese.isSelected(),
+                    extraSauce.isSelected());
+            dynamicTotal += meatzza.price();
+        }
+        else if(pizza.equals(SEAFOOD)){
+            Seafood seafood = new Seafood(getSize(), extraCheese.isSelected(),
+                    extraSauce.isSelected());
+            dynamicTotal += seafood.price();
+        }
+        else if(pizza.equals(PEPPERONI)){
+            Pepperoni pepperoni = new Pepperoni(getSize(), extraCheese.isSelected(),
+                    extraSauce.isSelected());
+            dynamicTotal += pepperoni.price();
+        }
+        else if(pizza.equals(SUPREME)){
+            Supreme supreme = new Supreme(getSize(), extraCheese.isSelected(),
+                    extraSauce.isSelected());
+            dynamicTotal += supreme.price();
+        }
+        else if(pizza.equals(DELUXE)){
+            Deluxe deluxe = new Deluxe(getSize(), extraCheese.isSelected(),
+                    extraSauce.isSelected());
+            dynamicTotal += deluxe.price();
+        }
+        String newTotal = new DecimalFormat("0.00").format(dynamicTotal);
+        total.setText("$" + newTotal);
+    }
+
+    private void displayToppings(String pizza){
+        if(pizza.equals(MEATZZA)){
+            Meatzza meatzza = new Meatzza(Size.SMALL, false, false);
+            toppingsList.setItems(meatzza.getToppings());
+        }
+        else if(pizza.equals(SEAFOOD)){
+            Seafood seafood = new Seafood(Size.SMALL, false, false);
+            toppingsList.setItems(seafood.getToppings());
+        }
+        else if(pizza.equals(PEPPERONI)){
+            Pepperoni pepperoni = new Pepperoni(Size.SMALL, false, false);
+            toppingsList.setItems(pepperoni.getToppings());
+        }
+        else if(pizza.equals(SUPREME)){
+            Supreme supreme = new Supreme(Size.SMALL, false, false);
+            toppingsList.setItems(supreme.getToppings());
+        }
+        else if(pizza.equals(DELUXE)){
+            Deluxe deluxe = new Deluxe(Size.SMALL, false, false);
+            toppingsList.setItems(deluxe.getToppings());
+        }
     }
 
     private void displayPizzaImage(String pizza){
@@ -105,5 +163,40 @@ public class SpecialtyPizzasController implements Initializable {
         pepperoniImage.setVisible(false);
         deluxeImage.setVisible(false);
         meatzzaImage.setVisible(false);
+    }
+
+    @FXML
+    protected void onAddToOrderClick(){
+        String pizzaSelected = (String)comboBox.getValue();
+        if(pizzaSelected.equals(MEATZZA)){
+            Pizza pizza = new Meatzza(getSize(), extraCheese.isSelected(),
+                    extraSauce.isSelected());
+        }
+        else if(pizzaSelected.equals(SEAFOOD)){
+            seafoodImage.setVisible(true);
+        }
+        else if(pizzaSelected.equals(PEPPERONI)){
+            pepperoniImage.setVisible(true);
+        }
+        else if(pizzaSelected.equals(SUPREME)){
+            supremeImage.setVisible(true);
+        }
+        else if(pizzaSelected.equals(DELUXE)){
+            deluxeImage.setVisible(true);
+        }
+    }
+
+    private Size getSize(){
+        Size size = null;
+        if(smallButton.isSelected()){
+            size = Size.SMALL;
+        }
+        else if(mediumButton.isSelected()){
+            size = Size.MEDIUM;
+        }
+        else if(largeButton.isSelected()){
+            size = Size.LARGE;
+        }
+        return size;
     }
 }

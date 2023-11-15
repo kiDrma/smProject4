@@ -13,4 +13,23 @@ public abstract class Pizza {
     protected double EXTRA_PRICE_INCREASE = 1;
 
     public abstract double price(); //polymorphism
+
+
+    public void setToppings(ArrayList<Topping> toppingsArg){
+        toppings = toppingsArg;
+    }
+
+    public void setSauceType(Sauce newSauce){
+        sauce = newSauce;
+    }
+
+    public void setExtraCheese(boolean extra){
+        extraCheese = extra;
+    }
+    public void setExtraSauce(boolean extra){
+        extraSauce = extra;
+    }
+    public void setSize(Size newSize){
+        size = newSize;
+    }
 }

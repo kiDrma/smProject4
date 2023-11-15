@@ -20,6 +20,7 @@ public class Custom extends Pizza{
     public Custom(ArrayList<Topping> toppingsArg, Sauce sauce, Size size,
                   boolean extraCheese, boolean extraSauce){
         toppings = toppingsArg;
+        numberOfToppings = toppingsArg.size();
 
         this.sauce = sauce;
         this.size = size;
@@ -37,6 +38,7 @@ public class Custom extends Pizza{
         }
     }
 */
+
     /**
      * Determines the price of the Custom pizza.
      * @return price of the pizza.
@@ -55,7 +57,7 @@ public class Custom extends Pizza{
         if(extraSauce == true){
             price += EXTRA_PRICE_INCREASE;
         }
-        price += numberOfToppings * TOPPING_PRICE;
+        price += toppings.size() * TOPPING_PRICE;
         return price;
     }
 

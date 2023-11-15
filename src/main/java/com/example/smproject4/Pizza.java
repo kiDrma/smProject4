@@ -1,4 +1,7 @@
 package com.example.smproject4;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.util.ArrayList;
 
 public abstract class Pizza {
@@ -31,5 +34,9 @@ public abstract class Pizza {
     }
     public void setSize(Size newSize){
         size = newSize;
+    }
+
+    public ObservableList<Topping> getToppings(){
+        return FXCollections.observableArrayList(toppings);
     }
 }

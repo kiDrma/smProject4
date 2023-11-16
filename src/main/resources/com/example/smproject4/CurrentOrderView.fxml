@@ -9,18 +9,19 @@
       <Pane layoutX="14.0" layoutY="14.0" prefHeight="367.0" prefWidth="574.0">
          <children>
             <ListView fx:id="listOfPizzas" layoutX="14.0" layoutY="40.0" prefHeight="194.0" prefWidth="154.0" />
-            <TextArea fx:id="currentPizza" editable="false" layoutX="192.0" layoutY="40.0" prefHeight="89.0" prefWidth="288.0" />
+            <TextArea fx:id="currentPizza" editable="false" layoutX="192.0" layoutY="40.0" prefHeight="123.0" prefWidth="371.0" />
             <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pizzas in Order" />
             <Text layoutX="192.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected Pizza" />
             <Text layoutX="14.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Pizzas:" />
             <Text layoutX="20.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Price:" />
-            <Text layoutX="185.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales Tax:" />
-            <Text layoutX="348.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:" />
+            <Text layoutX="171.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales Tax:" />
+            <Text layoutX="327.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:" />
             <TextField fx:id="numberOfPizzas" editable="false" layoutX="114.0" layoutY="249.0" prefHeight="25.0" prefWidth="79.0" />
             <TextField fx:id="netPrice" editable="false" layoutX="75.0" layoutY="331.0" prefHeight="25.0" prefWidth="79.0" />
-            <TextField fx:id="salesTax" editable="false" layoutX="240.0" layoutY="331.0" prefHeight="25.0" prefWidth="79.0" />
-            <TextField fx:id="total" editable="false" layoutX="383.0" layoutY="331.0" prefHeight="25.0" prefWidth="79.0" />
-            <Button layoutX="287.0" layoutY="150.0" mnemonicParsing="false" text="Remove Pizza" />
+            <TextField fx:id="salesTax" editable="false" layoutX="225.0" layoutY="331.0" prefHeight="25.0" prefWidth="79.0" />
+            <TextField fx:id="total" editable="false" layoutX="361.0" layoutY="331.0" prefHeight="25.0" prefWidth="79.0" />
+            <Button layoutX="287.0" layoutY="174.0" mnemonicParsing="false" onAction="#onRemovePizzaClick" text="Remove Pizza" />
+            <Button layoutX="461.0" layoutY="330.0" mnemonicParsing="false" onAction="#onPlaceOrderClick" text="Place Order" />
          </children>
       </Pane>
    </children>

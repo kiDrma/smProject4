@@ -7,11 +7,43 @@ public class Order {
     private static ArrayList<Pizza> pizzaList;
 
     public Order(){
-        pizzaList = new ArrayList<>();
+        if(pizzaList == null){
+            pizzaList = new ArrayList<>();
+        }
     }
 
     public void addPizzaToOrder(Pizza pizza){
         pizzaList.add(pizza);
+    }
+
+    public ArrayList<Pizza> getPizzaList(){
+        return pizzaList;
+    }
+
+    public ArrayList<String> getPizzaListToString(){
+        ArrayList<String> listOfPizzas = new ArrayList();
+        for(Pizza pizza : pizzaList){
+            String order = "";
+            order += "Type: " +
+                    pizza.getClass().getSimpleName() +
+                    " Size: " + pizza.getSize().toString();
+            if(pizza.extraCheese){
+                order += " Extra Cheese";
+            }
+            if(pizza.extraSauce){
+                order += " Extra Sauce";
+            }
+            listOfPizzas.add(order);
+        }
+        return listOfPizzas;
+    }
+
+    public ArrayList<String> getPizzaListBasicNames(){
+        ArrayList<String> list = new ArrayList<>();
+        for(Pizza pizza : pizzaList){
+            list.add(pizza.getClass().getSimpleName());
+        }
+        return list;
     }
 
     public String displayOrder(){

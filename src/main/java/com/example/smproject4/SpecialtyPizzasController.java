@@ -26,6 +26,8 @@ public class SpecialtyPizzasController implements Initializable {
     private final String PEPPERONI = "Pepperoni";
     private final String SUPREME = "Supreme";
     private double dynamicTotal = 0;
+    private boolean orderInProgress = false;
+    private Order order = new Order();
     @FXML
     private ComboBox comboBox = new ComboBox<>();
     @FXML
@@ -58,6 +60,8 @@ public class SpecialtyPizzasController implements Initializable {
     private ImageView deluxeImage;
     @FXML
     private ImageView pepperoniImage;
+    @FXML
+    private TextArea testOrderOutput;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -85,6 +89,9 @@ public class SpecialtyPizzasController implements Initializable {
     protected void displayTotal(){
         String pizza = (String)comboBox.getValue();
         dynamicTotal = 0;
+        if(pizza == null){
+            return;
+        }
         if(pizza.equals(MEATZZA)){
             Meatzza meatzza = new Meatzza(getSize(), extraCheese.isSelected(),
                     extraSauce.isSelected());
@@ -167,23 +174,48 @@ public class SpecialtyPizzasController implements Initializable {
 
     @FXML
     protected void onAddToOrderClick(){
+        if(!validInput()){
+            return;
+        }
         String pizzaSelected = (String)comboBox.getValue();
+        Pizza pizza = makePizza(pizzaSelected);
+        pizza.setSize(getSize());
+        pizza.setExtraCheese(extraCheese.isSelected());
+        pizza.setExtraSauce(extraSauce.isSelected());
+        order.addPizzaToOrder(pizza);
+        testOrderOutput.appendText(order.displayOrder());
+    }
+
+    private boolean validInput(){
+        if(getSize() == null){
+            testOrderOutput.appendText("Please select a size.\n");
+            return false;
+        }
+        if(comboBox.getValue() == null){
+            testOrderOutput.appendText("Please select a pizza.\n");
+            return false;
+        }
+        return true;
+    }
+
+    private Pizza makePizza(String pizzaSelected){
+        Pizza pizza = null;
         if(pizzaSelected.equals(MEATZZA)){
-            Pizza pizza = new Meatzza(getSize(), extraCheese.isSelected(),
-                    extraSauce.isSelected());
+            pizza = PizzaMaker.createPizza(MEATZZA);
         }
         else if(pizzaSelected.equals(SEAFOOD)){
-            seafoodImage.setVisible(true);
+            pizza = PizzaMaker.createPizza(SEAFOOD);
         }
         else if(pizzaSelected.equals(PEPPERONI)){
-            pepperoniImage.setVisible(true);
+            pizza = PizzaMaker.createPizza(PEPPERONI);
         }
         else if(pizzaSelected.equals(SUPREME)){
-            supremeImage.setVisible(true);
+            pizza = PizzaMaker.createPizza(SUPREME);
         }
         else if(pizzaSelected.equals(DELUXE)){
-            deluxeImage.setVisible(true);
+            pizza = PizzaMaker.createPizza(DELUXE);
         }
+        return pizza;
     }
 
     private Size getSize(){

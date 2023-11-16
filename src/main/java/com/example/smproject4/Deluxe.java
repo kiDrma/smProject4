@@ -9,6 +9,16 @@ public class Deluxe extends Pizza{
     private final double BASE_PRICE = 14.99;
 
     /**
+     * Default constructor.
+     */
+    public Deluxe(){
+        this.toppings = new ArrayList<>();
+        initializeToppings();
+        this.sauce = Sauce.TOMATO;
+        this.size = Size.SMALL;
+    }
+
+    /**
      * Constructor using given size, extra cheese, and extra sauce.
      * @param size
      * @param extraCheese

@@ -10,6 +10,16 @@ public class Meatzza extends Pizza{
     private final double BASE_PRICE = 16.99;
 
     /**
+     * Default constructor.
+     */
+    public Meatzza(){
+        this.toppings = new ArrayList<>();
+        initializeToppings();
+        this.sauce = Sauce.TOMATO;
+        this.size = Size.SMALL;
+    }
+
+    /**
      * Constructor using given size, extra cheese, and extra sauce.
      * @param size
      * @param extraCheese

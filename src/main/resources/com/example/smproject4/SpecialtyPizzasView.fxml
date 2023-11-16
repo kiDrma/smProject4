@@ -54,6 +54,7 @@
                   <Image url="@../../../pepperoni.jpg" />
                </image>
             </ImageView>
+            <TextArea fx:id="testOrderOutput" layoutX="64.0" layoutY="238.0" prefHeight="104.0" prefWidth="273.0" />
          </children>
       </Pane>
    </children>

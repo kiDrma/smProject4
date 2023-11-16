@@ -9,6 +9,16 @@ public class Seafood extends Pizza{
     private final double BASE_PRICE = 17.99;
 
     /**
+     * Default constructor.
+     */
+    public Seafood(){
+        this.toppings = new ArrayList<>();
+        initializeToppings();
+        this.sauce = Sauce.ALFREDO;
+        this.size = Size.SMALL;
+    }
+
+    /**
      * Constructor using given size, extra cheese, and extra sauce.
      * @param size
      * @param extraCheese

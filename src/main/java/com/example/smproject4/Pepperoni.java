@@ -9,6 +9,16 @@ public class Pepperoni extends Pizza{
     private final double BASE_PRICE = 10.99;
 
     /**
+     * Default constructor.
+     */
+    public Pepperoni(){
+        this.toppings = new ArrayList<>();
+        initializeToppings();
+        this.sauce = Sauce.TOMATO;
+        this.size = Size.SMALL;
+    }
+
+    /**
      * Constructor using given size, extra cheese, and extra sauce.
      * @param size
      * @param extraCheese

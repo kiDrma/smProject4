@@ -39,4 +39,8 @@ public abstract class Pizza {
     public ObservableList<Topping> getToppings(){
         return FXCollections.observableArrayList(toppings);
     }
+
+    public Size getSize(){
+        return this.size;
+    }
 }

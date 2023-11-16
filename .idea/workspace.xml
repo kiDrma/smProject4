@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4220f52-c33c-4080-a1c5-9355024c38b2" name="Changes" comment="toppings maximum, refactored to use PizzaMaker">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Deluxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Deluxe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Meatzza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Meatzza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Pepperoni.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Pepperoni.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Pizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/PizzaMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/PizzaMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Seafood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Seafood.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/SpecialtyPizzasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/SpecialtyPizzasController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Supreme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Supreme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/SpecialtyPizzasView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/SpecialtyPizzasView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

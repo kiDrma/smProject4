@@ -54,8 +54,12 @@ public class CurrentOrderController implements Initializable{
     @FXML
     protected void onRemovePizzaClick(){
         int index = listOfPizzas.getSelectionModel().getSelectedIndex();
+        if(index == -1){
+            return;
+        }
         order.getOrder().getPizzaList().remove(index);
         listOfPizzas.setItems(FXCollections.observableArrayList(order.getOrder().getPizzaListBasicNames()));
+        resetAllFields();
     }
 
     private double calculateTotal(){
@@ -79,17 +83,20 @@ public class CurrentOrderController implements Initializable{
     @FXML
     protected void onPlaceOrderClick(){
         // Add implementation to place the order in a list before deleting.
-        storeOrders.addOrder(order.getOrder());
+        Order addedOrder = new Order(order.getOrder());
+        storeOrders.addOrder(addedOrder);
         order.getOrder().resetOrder();
         listOfPizzas.getItems().clear();
         resetAllFields();
     }
 
     private void resetAllFields(){
-        String zero = new DecimalFormat("0.00").format(0);
-        netPrice.setText("$" + zero);
-        salesTax.setText("$" + zero);
-        total.setText("$" + zero);
+        String net = new DecimalFormat("0.00").format(calculateNetPrice());
+        String tax = new DecimalFormat("0.00").format(calculateTax());
+        String theTotal = new DecimalFormat("0.00").format(calculateTotal());
+        netPrice.setText("$" + net);
+        salesTax.setText("$" + tax);
+        total.setText("$" + theTotal);
         numberOfPizzas.setText("" + order.getOrder().getPizzaList().size());
         currentPizza.clear();
     }

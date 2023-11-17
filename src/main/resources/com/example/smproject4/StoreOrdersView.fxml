@@ -14,8 +14,8 @@
             <Text layoutX="14.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order #:" />
             <Text layoutX="108.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pizzas in Order:" />
             <Text layoutX="267.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected Pizza:" />
-            <Button layoutX="108.0" layoutY="250.0" mnemonicParsing="false" text="Cancel Order" />
-            <Button layoutX="108.0" layoutY="301.0" mnemonicParsing="false" text="Export Orders" />
+            <Button layoutX="108.0" layoutY="250.0" mnemonicParsing="false" onAction="#cancelOrder" text="Cancel Order" />
+            <Button layoutX="108.0" layoutY="301.0" mnemonicParsing="false" onAction="#export" text="Export Orders" />
             <TextField fx:id="total" editable="false" layoutX="427.0" layoutY="146.0" prefHeight="25.0" prefWidth="89.0" />
             <Text layoutX="392.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:" />
          </children>

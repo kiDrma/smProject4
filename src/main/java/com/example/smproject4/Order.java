@@ -4,9 +4,23 @@ import java.util.ArrayList;
 
 public class Order {
     private ArrayList<Pizza> pizzaList;
+    private final double TAX_RATE = .0625;
 
     public Order(){
         pizzaList = new ArrayList<>();
+    }
+
+    public Order(Order order){
+        this.pizzaList = new ArrayList<>(order.getPizzaList());
+    }
+
+    public double getOrderTotal(){
+        double total = 0;
+        for(Pizza pizza : pizzaList){
+            total += pizza.getPrice();
+        }
+        total += total * TAX_RATE;
+        return total;
     }
 
     public void addPizzaToOrder(Pizza pizza){

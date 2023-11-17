@@ -4,14 +4,23 @@ import java.util.ArrayList;
 
 public class StoreOrders {
     private static int orderNumber = 1;
-    private ArrayList<Order> storeOrders = new ArrayList<>();
-    private ArrayList<Integer> orderNumbers = new ArrayList<>();
+    private ArrayList<Order> storeOrders;
+    private ArrayList<Integer> orderNumbers;
+
+    public StoreOrders(){
+        storeOrders = new ArrayList<>();
+        orderNumbers = new ArrayList<>();
+    }
 
     public void addOrder(Order order){
         storeOrders.add(order);
-        System.out.println("Added " + order.displayOrder());
         orderNumbers.add(orderNumber);
         orderNumber++;
+    }
+
+    public void removeOrder(Order order, int orderNumber){
+        storeOrders.remove(order);
+        orderNumbers.remove((Integer)orderNumber);
     }
 
     public ArrayList<Integer> getOrderNumbers(){

@@ -3,13 +3,10 @@ package com.example.smproject4;
 import java.util.ArrayList;
 
 public class Order {
-    private static int orderNumber = 1;
-    private static ArrayList<Pizza> pizzaList;
+    private ArrayList<Pizza> pizzaList;
 
     public Order(){
-        if(pizzaList == null){
-            pizzaList = new ArrayList<>();
-        }
+        pizzaList = new ArrayList<>();
     }
 
     public void addPizzaToOrder(Pizza pizza){
@@ -46,10 +43,18 @@ public class Order {
         return list;
     }
 
+    public String getPizzaListBasicNamesToString(){
+        String pizzas = "";
+        for(Pizza pizza : pizzaList){
+            pizzas += pizza.getClass().getSimpleName() + "\n";
+        }
+        return pizzas;
+    }
+
     public String displayOrder(){
         String order = "";
         for(Pizza pizza : pizzaList){
-            order += "Order #" + orderNumber + " Type: " +
+            order += "Type: " +
                     pizza.getClass().getSimpleName() +
                     " Size: " + pizza.getSize().toString();
             if(pizza.extraCheese){
@@ -65,6 +70,5 @@ public class Order {
 
     public void resetOrder(){
         pizzaList.clear();
-        orderNumber++;
     }
 }

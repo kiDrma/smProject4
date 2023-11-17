@@ -15,7 +15,8 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class CurrentOrderController implements Initializable{
-    private Order order = new Order();
+    private SingletonOrder order = SingletonOrder.getInstance();
+    private SingletonStoreOrders storeOrders = SingletonStoreOrders.getInstance();
     private static final double TAX_RATE = .0625;
     @FXML
     private ListView listOfPizzas;
@@ -32,18 +33,18 @@ public class CurrentOrderController implements Initializable{
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        listOfPizzas.setItems(FXCollections.observableArrayList(order.getPizzaListBasicNames()));
+        listOfPizzas.setItems(FXCollections.observableArrayList(order.getOrder().getPizzaListBasicNames()));
         String net = new DecimalFormat("0.00").format(calculateNetPrice());
         netPrice.setText("$" + net);
         String tax = new DecimalFormat("0.00").format(calculateTax());
         salesTax.setText("$" + tax);
         String totalPrice = new DecimalFormat("0.00").format(calculateTotal());
         total.setText("$" + totalPrice);
-        numberOfPizzas.setText("" + order.getPizzaList().size());
+        numberOfPizzas.setText("" + order.getOrder().getPizzaList().size());
         listOfPizzas.setOnMouseClicked(event -> {
             int index = listOfPizzas.getSelectionModel().getSelectedIndex();
             if(index != -1){
-                Pizza selectedPizza = order.getPizzaList().get(index);
+                Pizza selectedPizza = order.getOrder().getPizzaList().get(index);
                 String pizzaString = selectedPizza.toString();
                 currentPizza.setText(pizzaString);
             }
@@ -53,8 +54,8 @@ public class CurrentOrderController implements Initializable{
     @FXML
     protected void onRemovePizzaClick(){
         int index = listOfPizzas.getSelectionModel().getSelectedIndex();
-        order.getPizzaList().remove(index);
-        listOfPizzas.setItems(FXCollections.observableArrayList(order.getPizzaListBasicNames()));
+        order.getOrder().getPizzaList().remove(index);
+        listOfPizzas.setItems(FXCollections.observableArrayList(order.getOrder().getPizzaListBasicNames()));
     }
 
     private double calculateTotal(){
@@ -64,7 +65,7 @@ public class CurrentOrderController implements Initializable{
 
     private double calculateNetPrice(){
         double net = 0;
-        for(Pizza pizza : order.getPizzaList()){
+        for(Pizza pizza : order.getOrder().getPizzaList()){
             net += pizza.getPrice();
         }
         return net;
@@ -78,7 +79,8 @@ public class CurrentOrderController implements Initializable{
     @FXML
     protected void onPlaceOrderClick(){
         // Add implementation to place the order in a list before deleting.
-        order.resetOrder();
+        storeOrders.addOrder(order.getOrder());
+        order.getOrder().resetOrder();
         listOfPizzas.getItems().clear();
         resetAllFields();
     }
@@ -88,7 +90,7 @@ public class CurrentOrderController implements Initializable{
         netPrice.setText("$" + zero);
         salesTax.setText("$" + zero);
         total.setText("$" + zero);
-        numberOfPizzas.setText("" + order.getPizzaList().size());
+        numberOfPizzas.setText("" + order.getOrder().getPizzaList().size());
         currentPizza.clear();
     }
 }

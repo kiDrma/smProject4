@@ -26,7 +26,7 @@ public class SpecialtyPizzasController implements Initializable {
     private final String PEPPERONI = "Pepperoni";
     private final String SUPREME = "Supreme";
     private double dynamicTotal = 0;
-    private Order order = new Order();
+    private SingletonOrder s = SingletonOrder.getInstance();
     @FXML
     private ComboBox comboBox = new ComboBox<>();
     @FXML
@@ -181,12 +181,8 @@ public class SpecialtyPizzasController implements Initializable {
         pizza.setSize(getSize());
         pizza.setExtraCheese(extraCheese.isSelected());
         pizza.setExtraSauce(extraSauce.isSelected());
-        order.addPizzaToOrder(pizza);
-        testOrderOutput.appendText(order.displayOrder());
-    }
-
-    private void addToOrdersScreen(){
-
+        s.getOrder().addPizzaToOrder(pizza);
+        testOrderOutput.appendText(s.getOrder().displayOrder());
     }
 
     private boolean validInput(){

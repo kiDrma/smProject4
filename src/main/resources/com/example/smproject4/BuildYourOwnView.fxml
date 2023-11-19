@@ -38,7 +38,7 @@
             <Text layoutX="282.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toppings" />
             <Text layoutX="366.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:" />
             <TextField fx:id="priceDisplay" editable="false" layoutX="400.0" layoutY="294.0" prefHeight="25.0" prefWidth="100.0" />
-            <Button layoutX="406.0" layoutY="333.0" mnemonicParsing="false" onAction="#buildPizza" text="Add To Order" />
+            <Button layoutX="406.0" layoutY="333.0" mnemonicParsing="false" onAction="#addPizzaToOrder" text="Add To Order" />
             <RadioButton fx:id="tomatoButton" layoutX="15.0" layoutY="158.0" mnemonicParsing="false" text="Tomato Sauce">
                <toggleGroup>
                   <ToggleGroup fx:id="sauce" />

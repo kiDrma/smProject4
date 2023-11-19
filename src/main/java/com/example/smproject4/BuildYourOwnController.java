@@ -126,7 +126,7 @@ public class BuildYourOwnController {
         ArrayList<Topping> customToppings = selectedToppings();
 
         PizzaMaker newPizzaMaker = new PizzaMaker();
-        Custom output = (Custom)newPizzaMaker.createPizza("custom");
+        Custom output = (Custom)newPizzaMaker.createPizza("Custom");
 
         output.setExtraCheese(extraCheese);
         output.setExtraSauce(extraSauce);
@@ -137,11 +137,12 @@ public class BuildYourOwnController {
         return output;
     }
     @FXML
-    private void addPizzaOrder() {
+    private void addPizzaToOrder() {
         if(selectedToppings().size() > 7){
             return;
         }
         Custom toAdd = buildPizza();
+        SingletonOrder.getInstance().getOrder().addPizzaToOrder(toAdd);
     }
 
     @FXML

@@ -62,8 +62,11 @@ public class StoreOrdersController implements Initializable{
             FileWriter fileWriter = new FileWriter(file);
             for(int i = 0; i < s.getStoreOrders().getOrders().size(); i++){
                 try{
+                    StoreOrders storeOrders = s.getStoreOrders();
                     fileWriter.write("Order #" + s.getStoreOrders().getOrderNumbers().get(i) + "\n");
-                    fileWriter.write(s.getStoreOrders().getOrders().get(i).displayOrder() + "\n");
+                    fileWriter.write(storeOrders.getOrders().get(i).displayOrder());
+                    String theTotal = new DecimalFormat("0.00").format(storeOrders.getOrders().get(i).getOrderTotal());
+                    fileWriter.write("Total: $" + theTotal + "\n\n");
                 }
                 catch(IOException e){
                     return;

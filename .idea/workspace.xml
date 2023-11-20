@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4220f52-c33c-4080-a1c5-9355024c38b2" name="Changes" comment="whyyyyyyyyyy">
+    <list default="true" id="b4220f52-c33c-4080-a1c5-9355024c38b2" name="Changes" comment="small stuff and export works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/BuildYourOwnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/BuildYourOwnController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/CurrentOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/CurrentOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Custom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Custom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Pizza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/SpecialtyPizzasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/SpecialtyPizzasController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/StoreOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/StoreOrders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/StoreOrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/StoreOrdersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/BuildYourOwnView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/BuildYourOwnView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700249149204</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="small stuff and export works">
+      <option name="closed" value="true" />
+      <created>1700504126936</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700504126936</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -151,6 +153,7 @@
     <MESSAGE value="ORDERS!!!!!!" />
     <MESSAGE value="order screne working" />
     <MESSAGE value="whyyyyyyyyyy" />
-    <option name="LAST_COMMIT_MESSAGE" value="whyyyyyyyyyy" />
+    <MESSAGE value="small stuff and export works" />
+    <option name="LAST_COMMIT_MESSAGE" value="small stuff and export works" />
   </component>
 </project>

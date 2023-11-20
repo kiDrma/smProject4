@@ -1,5 +1,6 @@
 package com.example.smproject4;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Order {
@@ -67,7 +68,9 @@ public class Order {
 
     public String displayOrder(){
         String order = "";
+        int i = 1;
         for(Pizza pizza : pizzaList){
+            order += "Pizza #" + i + "\n";
             order += "Type: " +
                     pizza.getClass().getSimpleName() +
                     " Size: " + pizza.getSize().toString();
@@ -77,7 +80,11 @@ public class Order {
             if(pizza.extraSauce){
                 order += " Extra Sauce";
             }
+            order += "\nToppings: " + pizza.getToppings().toString() + "\n";
+            String price = new DecimalFormat("0.00").format(pizza.getPrice());
+            order += "Price: $" + price;
             order += "\n";
+            i++;
         }
         return order;
     }

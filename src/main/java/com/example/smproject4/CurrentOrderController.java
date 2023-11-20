@@ -82,7 +82,6 @@ public class CurrentOrderController implements Initializable{
 
     @FXML
     protected void onPlaceOrderClick(){
-        // Add implementation to place the order in a list before deleting.
         Order addedOrder = new Order(order.getOrder());
         storeOrders.addOrder(addedOrder);
         order.getOrder().resetOrder();

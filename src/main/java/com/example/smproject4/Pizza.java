@@ -56,13 +56,13 @@ public abstract class Pizza {
             + this.size + " Sauce: " + this.sauce + "\nToppings: "
             + this.getToppings() + "\n";
         if(this.extraCheese){
-            s += "Extra cheese ";
+            s += "Extra cheese \n";
         }
         if(this.extraSauce){
-            s += "Extra sauce ";
+            s += "Extra sauce \n";
         }
         String price = new DecimalFormat("0.00").format(this.getPrice());
-        s += "\nPrice: $" + price;
+        s += "Price: $" + price;
         return s;
     }
 }

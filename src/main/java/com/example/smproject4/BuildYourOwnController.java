@@ -111,14 +111,8 @@ public class BuildYourOwnController {
 
     @FXML
     private Custom buildPizza(){
-        Sauce customSauce = null;
-        if(alfredoButton.isSelected()){customSauce = Sauce.ALFREDO;}
-        if(tomatoButton.isSelected()){customSauce = Sauce.TOMATO;}
-
-        Size customSize = null;
-        if(largeButton.isSelected()){customSize = Size.LARGE;}
-        if(mediumButton.isSelected()){customSize = Size.MEDIUM;}
-        if(smallButton.isSelected()){customSize = Size.SMALL;}
+        Sauce customSauce = getSauce();
+        Size customSize = getSize();
 
         boolean extraCheese = extraCheeseBox.isSelected();
         boolean extraSauce = extraSauceBox.isSelected();
@@ -136,13 +130,45 @@ public class BuildYourOwnController {
 
         return output;
     }
+
     @FXML
     private void addPizzaToOrder() {
         if(selectedToppings().size() > 7){
             return;
         }
+        if(!validInput()){
+            return;
+        }
         Custom toAdd = buildPizza();
         SingletonOrder.getInstance().getOrder().addPizzaToOrder(toAdd);
+        display.appendText("Pizza added to order.\n");
+    }
+
+    private boolean validInput(){
+        if(getSize() == null){
+            display.appendText("Please select a size.\n");
+            return false;
+        }
+        if(getSauce() == null){
+            display.appendText("Please select a sauce.\n");
+            return false;
+        }
+        return true;
+    }
+
+    private Size getSize(){
+        Size customSize = null;
+        if(largeButton.isSelected()){customSize = Size.LARGE;}
+        if(mediumButton.isSelected()){customSize = Size.MEDIUM;}
+        if(smallButton.isSelected()){customSize = Size.SMALL;}
+        return customSize;
+    }
+
+    private Sauce getSauce(){
+        Sauce customSauce = null;
+        if(alfredoButton.isSelected()){customSauce = Sauce.ALFREDO;}
+        if(tomatoButton.isSelected()){customSauce = Sauce.TOMATO;}
+        return customSauce;
     }
 
     @FXML
@@ -163,4 +189,6 @@ public class BuildYourOwnController {
     private ListView toppingsList;
     @FXML
     private TextField priceDisplay;
+    @FXML
+    private TextArea display;
 }

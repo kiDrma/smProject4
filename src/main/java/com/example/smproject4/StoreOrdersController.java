@@ -8,6 +8,9 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.fxml.Initializable;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.net.URL;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -54,7 +57,23 @@ public class StoreOrdersController implements Initializable{
     }
 
     public void export(){
-
+        try{
+            File file = new File("StoreOrders.txt");
+            FileWriter fileWriter = new FileWriter(file);
+            for(int i = 0; i < s.getStoreOrders().getOrders().size(); i++){
+                try{
+                    fileWriter.write("Order #" + s.getStoreOrders().getOrderNumbers().get(i) + "\n");
+                    fileWriter.write(s.getStoreOrders().getOrders().get(i).displayOrder() + "\n");
+                }
+                catch(IOException e){
+                    return;
+                }
+            }
+            fileWriter.close();
+        }
+        catch(IOException e){
+            return;
+        }
     }
 
     @FXML

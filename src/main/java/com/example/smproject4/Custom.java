@@ -62,15 +62,23 @@ public class Custom extends Pizza{
     }
 
     public String toString(){
-        String output = "\nCustom pizza: ";
-        output += "\n Price " + price();
-        output += "\n Toppings: ";
+        String output = "Type: Custom ";
+        output += "Size: " + size.toString() + " ";
+        output += "Sauce: " + sauce.toString();
+        output += "\nToppings: " + this.getToppings();
+        /*
         for(int i = 0; i < toppings.size(); i++){
-            output += toppings.get(i).toString() + ",";
+            output += toppings.get(i).toString() + ", ";
         }
-        output += "\n Sauce type: " + sauce.toString();
-        output += "\n Extra cheese/sauce: " + extraCheese + ", " + extraSauce;
-        output += "\n Size: " + size.toString();
+        */
+        output += "\n";
+        if(extraCheese){
+            output += "Extra cheese\n";
+        }
+        if(extraSauce){
+            output+= "Extra sauce\n";
+        }
+        output += "Price: $" + price();
         return output;
     }
 }

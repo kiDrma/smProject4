@@ -11,6 +11,10 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class BuildYourOwnController {
+
+    /**
+     * Initializes object for GUI and database use
+     */
     @FXML
     private void initialize() {
         // Add ChangeListeners to the checkboxes
@@ -40,7 +44,10 @@ public class BuildYourOwnController {
         });
     }
 
-    public void updateToppingsTextDisplay(){
+    /**
+     * Updates displayed selected toppings
+     */
+    private void updateToppingsTextDisplay(){
 
         toppingsList.getItems().clear();
 
@@ -61,7 +68,11 @@ public class BuildYourOwnController {
         }
         updatePrice();
     }
-    public void updatePrice(){
+
+    /**
+     * Updates displayed price
+     */
+    private void updatePrice(){
 
         if(selectedToppings().size() > 7) {
             priceDisplay.clear();
@@ -78,6 +89,11 @@ public class BuildYourOwnController {
     }
     @FXML
     private VBox toppingsVBox;
+
+    /**
+     * Returns ArrayList of all selected toppings
+     * @return ArrayList\<Topping\> of all selected toppings
+     */
     @FXML
     private ArrayList<Topping> selectedToppings(){
 
@@ -95,20 +111,13 @@ public class BuildYourOwnController {
                 }
             }
         }
-
-
-        //debug
-        /*String debugString = "Selected toppings: \n";
-        for (int i = 0; i < addedToppingsCount; i++) {
-            debugString += toppingsAdded.get(i).toString() + "\n";
-        }
-        System.out.println(debugString);
-        */
-
-
         return toppingsAdded;
     }
 
+    /**
+     * Builds and returns current custom pizza
+     * @return Custom with properly selected attributes
+     */
     @FXML
     private Custom buildPizza(){
         Sauce customSauce = getSauce();
@@ -131,6 +140,10 @@ public class BuildYourOwnController {
         return output;
     }
 
+
+    /**
+     * Creates a Custom and adds it to the current order
+     */
     @FXML
     private void addPizzaToOrder() {
         if(selectedToppings().size() > 7){
@@ -144,6 +157,12 @@ public class BuildYourOwnController {
         display.appendText("Pizza added to order.\n");
     }
 
+
+    /**
+     * Checks if input is valid
+     * @return true if valid, false otherwise
+     */
+
     private boolean validInput(){
         if(getSize() == null){
             display.appendText("Please select a size.\n");
@@ -156,6 +175,10 @@ public class BuildYourOwnController {
         return true;
     }
 
+    /**
+     * Gets selected size from GUI
+     * @return Size
+     */
     private Size getSize(){
         Size customSize = null;
         if(largeButton.isSelected()){customSize = Size.LARGE;}
@@ -164,6 +187,10 @@ public class BuildYourOwnController {
         return customSize;
     }
 
+    /**
+     * Gets selected sauce from GUI
+     * @return Sauce
+     */
     private Sauce getSauce(){
         Sauce customSauce = null;
         if(alfredoButton.isSelected()){customSauce = Sauce.ALFREDO;}

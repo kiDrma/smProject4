@@ -31,6 +31,10 @@ public class CurrentOrderController implements Initializable{
     @FXML
     private TextField total;
 
+
+    /**
+     * Initializes object for GUI and database use
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         listOfPizzas.setItems(FXCollections.observableArrayList(order.getOrder().getPizzaListBasicNames()));
@@ -51,6 +55,10 @@ public class CurrentOrderController implements Initializable{
         });
     }
 
+
+    /**
+     * Removes selected pizza from order
+     */
     @FXML
     protected void onRemovePizzaClick(){
         int index = listOfPizzas.getSelectionModel().getSelectedIndex();
@@ -62,11 +70,20 @@ public class CurrentOrderController implements Initializable{
         resetAllFields();
     }
 
+
+    /**
+     * Calculates the total cost of the order
+     * @return the cost as a double
+     */
     private double calculateTotal(){
         double total = calculateNetPrice() + calculateTax();
         return total;
     }
 
+    /**
+     * Calculates the total cost of just the pizzas
+     * @return the base pizza cost
+     */
     private double calculateNetPrice(){
         double net = 0;
         for(Pizza pizza : order.getOrder().getPizzaList()){
@@ -75,11 +92,18 @@ public class CurrentOrderController implements Initializable{
         return net;
     }
 
+    /**
+     * Calculates the total cost of just the tax after getting the pizza cost
+     * @return the tax
+     */
     private double calculateTax(){
         double tax = calculateNetPrice() * TAX_RATE;
         return tax;
     }
 
+    /**
+     * Adds order to all orders
+     */
     @FXML
     protected void onPlaceOrderClick(){
         Order addedOrder = new Order(order.getOrder());
@@ -89,6 +113,9 @@ public class CurrentOrderController implements Initializable{
         resetAllFields();
     }
 
+    /**
+     * Resets all relevant fields to 0
+     */
     private void resetAllFields(){
         String net = new DecimalFormat("0.00").format(calculateNetPrice());
         String tax = new DecimalFormat("0.00").format(calculateTax());

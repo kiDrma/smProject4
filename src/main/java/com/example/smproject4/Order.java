@@ -15,6 +15,10 @@ public class Order {
         this.pizzaList = new ArrayList<>(order.getPizzaList());
     }
 
+    /**
+     * Gets the total price of the order
+     * @return the total price of the order
+     */
     public double getOrderTotal(){
         double total = 0;
         for(Pizza pizza : pizzaList){
@@ -24,14 +28,26 @@ public class Order {
         return total;
     }
 
+    /**
+     * Adds pizza to order
+     * @param pizza is the pizza to add
+     */
     public void addPizzaToOrder(Pizza pizza){
         pizzaList.add(pizza);
     }
 
+    /**
+     * Gets the pizzaList
+     * @return the pizzaList
+     */
     public ArrayList<Pizza> getPizzaList(){
         return pizzaList;
     }
 
+    /**
+     * Gets String of pizza list
+     * @return list of pizzas as a string
+     */
     public ArrayList<String> getPizzaListToString(){
         ArrayList<String> listOfPizzas = new ArrayList();
         for(Pizza pizza : pizzaList){
@@ -50,6 +66,10 @@ public class Order {
         return listOfPizzas;
     }
 
+    /**
+     * Gets String of pizza list with basic names
+     * @return list of pizzas as a string, with basic names
+     */
     public ArrayList<String> getPizzaListBasicNames(){
         ArrayList<String> list = new ArrayList<>();
         for(Pizza pizza : pizzaList){
@@ -66,6 +86,10 @@ public class Order {
         return pizzas;
     }
 
+    /**
+     * Gets string of order details
+     * @return the order as a readable string
+     */
     public String displayOrder(){
         String order = "";
         int i = 1;
@@ -89,6 +113,10 @@ public class Order {
         return order;
     }
 
+
+    /**
+     * Clears pizzas in list
+     */
     public void resetOrder(){
         pizzaList.clear();
     }

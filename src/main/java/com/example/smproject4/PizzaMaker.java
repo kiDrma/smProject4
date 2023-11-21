@@ -12,6 +12,12 @@ public class PizzaMaker {
     private static final String SEAFOOD = "Seafood";
     private static final String SUPREME = "Supreme";
 
+
+    /**
+     * Creates a pizza given the pizzaType
+     * @param pizzaType
+     * @return the pizza type if exists, else return null
+     */
     public static Pizza createPizza(String pizzaType) {
         switch (pizzaType) {
             default:

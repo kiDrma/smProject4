@@ -4,6 +4,7 @@ public class SingletonStoreOrders {
     private static SingletonStoreOrders s;
     private static StoreOrders storeOrders;
 
+
     public static synchronized SingletonStoreOrders getInstance(){
         if(s == null){
             s = new SingletonStoreOrders();

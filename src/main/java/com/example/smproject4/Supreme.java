@@ -49,7 +49,8 @@ public class Supreme extends Pizza{
     /**
      * Determines the price of the Supreme pizza.
      * @return price of the pizza.
-     */    public double price(){
+     */
+    public double price(){
         double price = BASE_PRICE;
         if(this.size == Size.MEDIUM){
             price += MEDIUM_PRICE_INCREASE;

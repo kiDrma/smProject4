@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
@@ -46,6 +47,8 @@
             </RadioButton>
             <RadioButton fx:id="alfredoButton" layoutX="15.0" layoutY="179.0" mnemonicParsing="false" text="Alfredo Sauce" toggleGroup="$sauce" />
             <TextArea fx:id="display" layoutX="87.0" layoutY="281.0" prefHeight="76.0" prefWidth="262.0" />
+            <Button layoutX="460.0" layoutY="50.0" mnemonicParsing="false" text="Button" />
+            <ImageView fitHeight="35.0" fitWidth="45.0" layoutX="406.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </Pane>
    </children>

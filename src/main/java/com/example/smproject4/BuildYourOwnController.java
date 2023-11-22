@@ -92,7 +92,7 @@ public class BuildYourOwnController {
      */
     private void updatePrice(){
 
-        if(selectedToppings().size() > 7) {
+        if(selectedToppings().size() > 7 || selectedToppings().size() <3) {
             priceDisplay.clear();
             priceDisplay.appendText("Error");
             return;

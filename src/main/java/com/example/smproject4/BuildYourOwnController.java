@@ -57,6 +57,12 @@ public class BuildYourOwnController {
             updatePrice();
             return;
         }
+        if(selectedToppings().size() < 3){
+            toppingsList.getItems().clear();
+            toppingsList.getItems().add("Select >=3 toppings!");
+            updatePrice();
+            return;
+        }
 
         for (javafx.scene.Node node : toppingsVBox.getChildren()) {
             if (node instanceof CheckBox) {
@@ -67,6 +73,18 @@ public class BuildYourOwnController {
             }
         }
         updatePrice();
+    }
+
+    /**
+     * Returns the price of the current pizza
+     * @return the price as a double. If invalid choices, return 0
+     */
+    private double price(){
+        Custom tempPizza = buildPizza();
+        if(tempPizza == null){
+            return 0.0;
+        }
+        return tempPizza.price();
     }
 
     /**

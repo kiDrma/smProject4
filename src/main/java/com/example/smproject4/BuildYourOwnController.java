@@ -94,7 +94,7 @@ public class BuildYourOwnController {
 
         if(selectedToppings().size() > 7 || selectedToppings().size() <3) {
             priceDisplay.clear();
-            priceDisplay.appendText("Error");
+            priceDisplay.appendText("Invalid");
             return;
         }
         Custom tempPizza = buildPizza();

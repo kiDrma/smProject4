@@ -61,16 +61,15 @@ public class Custom extends Pizza{
         return price;
     }
 
+    /**
+     * Converts the Custom pizza to string.
+     * @return String of the pizza.
+     */
     public String toString(){
         String output = "Type: Custom ";
         output += "Size: " + size.toString() + " ";
         output += "Sauce: " + sauce.toString();
         output += "\nToppings: " + this.getToppings();
-        /*
-        for(int i = 0; i < toppings.size(); i++){
-            output += toppings.get(i).toString() + ", ";
-        }
-        */
         output += "\n";
         if(extraCheese){
             output += "Extra cheese\n";

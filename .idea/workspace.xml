@@ -7,6 +7,10 @@
     <list default="true" id="b4220f52-c33c-4080-a1c5-9355024c38b2" name="Changes" comment="some stuff idk lol">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/BuildYourOwnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/BuildYourOwnController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Custom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Custom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/MainMenuApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/MainMenuApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/MainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/MainMenuView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/MainMenuView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +62,11 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/dan q/IdeaProjects/smProject3 a3&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.smproject4" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MainMenuApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.smproject4.MainMenuApplication" />

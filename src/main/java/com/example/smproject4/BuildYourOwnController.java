@@ -158,7 +158,6 @@ public class BuildYourOwnController {
         return output;
     }
 
-
     /**
      * Creates a Custom and adds it to the current order
      */
@@ -175,12 +174,10 @@ public class BuildYourOwnController {
         display.appendText("Pizza added to order.\n");
     }
 
-
     /**
      * Checks if input is valid
      * @return true if valid, false otherwise
      */
-
     private boolean validInput(){
         if(getSize() == null){
             display.appendText("Please select a size.\n");

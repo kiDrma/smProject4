@@ -5,13 +5,13 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="410.0" prefWidth="480.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smproject4.MainMenuController">
+<VBox alignment="CENTER" prefHeight="410.0" prefWidth="573.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smproject4.MainMenuController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <Pane prefHeight="400.0" prefWidth="440.0">
+   <Pane prefHeight="380.0" prefWidth="537.0">
       <children>
-         <Button fx:id="specialtyButton" layoutX="31.0" layoutY="29.0" mnemonicParsing="false" onAction="#onOrderSpecialityClick">
+         <Button fx:id="specialtyButton" layoutX="31.0" layoutY="39.0" mnemonicParsing="false" onAction="#onOrderSpecialityClick">
           <graphic>
               <VBox alignment="CENTER">
               <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
@@ -23,7 +23,7 @@
               </VBox>
           </graphic>
           </Button>
-         <Button fx:id="buildYourOwnPizzaButton" layoutX="246.0" layoutY="129.0" mnemonicParsing="false" onAction="#onBuildYourOwnClick">
+         <Button fx:id="buildYourOwnPizzaButton" layoutX="279.0" layoutY="29.0" mnemonicParsing="false" onAction="#onBuildYourOwnClick">
              <graphic>
             <VBox alignment="CENTER">
               <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
@@ -35,8 +35,30 @@
           </VBox>
         </graphic>
          </Button>
-         <Button fx:id="currentOrderButton" layoutX="46.0" layoutY="307.0" mnemonicParsing="false" onAction="#onCurrentOrderClick" text="Current Order" />
-         <Button fx:id="storeOrdersButton" layoutX="310.0" layoutY="307.0" mnemonicParsing="false" onAction="#onStoreOrdersClick" text="Store Orders" />
+         <Button fx:id="storeOrdersButton" layoutX="279.0" layoutY="182.0" mnemonicParsing="false" onAction="#onStoreOrdersClick">
+             <graphic>
+                 <VBox alignment="CENTER">
+                     <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                             <Image url="@../../../storeOrders.png" />
+                         </image>
+                     </ImageView>
+                     <Label text="Store Orders" />
+                 </VBox>
+             </graphic>
+         </Button>
+         <Button fx:id="currentOrderButton" layoutX="37.0" layoutY="184.0" mnemonicParsing="false" onAction="#onCurrentOrderClick">
+             <graphic>
+                 <VBox alignment="CENTER">
+                     <ImageView fitHeight="106.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="false">
+                         <image>
+                             <Image url="@../../../orders.jpg" />
+                         </image>
+                     </ImageView>
+                     <Label text="Current Order" />
+                 </VBox>
+             </graphic>
+         </Button>
       </children>
    </Pane>
 

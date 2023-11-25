@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4220f52-c33c-4080-a1c5-9355024c38b2" name="Changes" comment="some stuff idk lol">
+    <list default="true" id="b4220f52-c33c-4080-a1c5-9355024c38b2" name="Changes" comment="some imag button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/BuildYourOwnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/BuildYourOwnController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Custom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Custom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/MainMenuApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/MainMenuApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/MainMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/MainMenuView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/smproject4/MainMenuView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700596258470</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="some imag button">
+      <option name="closed" value="true" />
+      <created>1700755811708</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700755811708</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -172,6 +176,7 @@
     <MESSAGE value="whyyyyyyyyyy" />
     <MESSAGE value="small stuff and export works" />
     <MESSAGE value="some stuff idk lol" />
-    <option name="LAST_COMMIT_MESSAGE" value="some stuff idk lol" />
+    <MESSAGE value="some imag button" />
+    <option name="LAST_COMMIT_MESSAGE" value="some imag button" />
   </component>
 </project>

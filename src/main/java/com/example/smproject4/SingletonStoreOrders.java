@@ -10,7 +10,7 @@ public class SingletonStoreOrders {
 
     /**
      * Returns the global storeOrders object, if there isn't one, makes one.
-     * @return
+     * @return store orders object.
      */
     public static synchronized SingletonStoreOrders getInstance(){
         if(s == null){
@@ -22,7 +22,7 @@ public class SingletonStoreOrders {
 
     /**
      * Returns the store orders object.
-     * @return
+     * @return store orders.
      */
     public StoreOrders getStoreOrders(){
         return storeOrders;

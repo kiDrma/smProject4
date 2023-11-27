@@ -10,7 +10,7 @@ public class SingletonOrder {
 
     /**
      * Returns the global order object.
-     * @return
+     * @return order.
      */
     public Order getOrder(){
         return order;
@@ -26,7 +26,7 @@ public class SingletonOrder {
 
     /**
      * Returns the global singleton order; if there isn't one, makes one.
-     * @return
+     * @return singleton order.
      */
     public static synchronized SingletonOrder getInstance(){
         if(s == null){

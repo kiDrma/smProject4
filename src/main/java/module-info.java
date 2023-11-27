@@ -9,6 +9,7 @@ module com.example.smproject4 {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires com.almasb.fxgl.all;
+    requires junit;
 
     opens com.example.smproject4 to javafx.fxml;
     exports com.example.smproject4;

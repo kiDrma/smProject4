@@ -2,7 +2,8 @@ package com.example.smproject4;
 import java.util.ArrayList;
 
 
-public class Custom extends Pizza{
+public class BuildYourOwn extends Pizza{
+    private final int TOPPINGS_INCLUDED = 3;
     private final double BASE_PRICE = 8.99;
     private final double TOPPING_PRICE = 1.49;
 
@@ -17,8 +18,8 @@ public class Custom extends Pizza{
      * @param extraCheese
      * @param extraSauce
      */
-    public Custom(ArrayList<Topping> toppingsArg, Sauce sauce, Size size,
-                  boolean extraCheese, boolean extraSauce){
+    public BuildYourOwn(ArrayList<Topping> toppingsArg, Sauce sauce, Size size,
+                        boolean extraCheese, boolean extraSauce){
         toppings = toppingsArg;
         numberOfToppings = toppingsArg.size();
 
@@ -57,7 +58,10 @@ public class Custom extends Pizza{
         if(extraSauce == true){
             price += EXTRA_PRICE_INCREASE;
         }
-        price += toppings.size() * TOPPING_PRICE;
+        if(toppings.size() <= TOPPINGS_INCLUDED){
+            return price;
+        }
+        price += (toppings.size() - TOPPINGS_INCLUDED) * TOPPING_PRICE;
         return price;
     }
 

@@ -1,13 +1,11 @@
 package com.example.smproject4;
 import java.text.DecimalFormat;
 
-import javafx.beans.value.ChangeListener;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class BuildYourOwnController {
@@ -79,12 +77,11 @@ public class BuildYourOwnController {
      * Returns the price of the current pizza
      * @return the price as a double. If invalid choices, return 0
      */
-    private double price(){
-        Custom tempPizza = buildPizza();
-        if(tempPizza == null){
+    private double price(Pizza pizza){
+        if(pizza == null){
             return 0.0;
         }
-        return tempPizza.price();
+        return pizza.price();
     }
 
     /**
@@ -97,7 +94,7 @@ public class BuildYourOwnController {
             priceDisplay.appendText("Invalid");
             return;
         }
-        Custom tempPizza = buildPizza();
+        BuildYourOwn tempPizza = buildPizza();
         priceDisplay.clear();
 
         DecimalFormat twoDecimals = new DecimalFormat("0.00");
@@ -137,7 +134,7 @@ public class BuildYourOwnController {
      * @return Custom with properly selected attributes
      */
     @FXML
-    private Custom buildPizza(){
+    private BuildYourOwn buildPizza(){
         Sauce customSauce = getSauce();
         Size customSize = getSize();
 
@@ -147,7 +144,7 @@ public class BuildYourOwnController {
         ArrayList<Topping> customToppings = selectedToppings();
 
         PizzaMaker newPizzaMaker = new PizzaMaker();
-        Custom output = (Custom)newPizzaMaker.createPizza("Custom");
+        BuildYourOwn output = (BuildYourOwn)newPizzaMaker.createPizza("Custom");
 
         output.setExtraCheese(extraCheese);
         output.setExtraSauce(extraSauce);
@@ -169,7 +166,7 @@ public class BuildYourOwnController {
         if(!validInput()){
             return;
         }
-        Custom toAdd = buildPizza();
+        BuildYourOwn toAdd = buildPizza();
         SingletonOrder.getInstance().getOrder().addPizzaToOrder(toAdd);
         display.appendText("Pizza added to order.\n");
     }

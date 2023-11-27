@@ -2,7 +2,11 @@ package com.example.smproject4;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-
+/**
+ * Define the data type Order.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class Order {
     private ArrayList<Pizza> pizzaList;
     private final double TAX_RATE = .0625;

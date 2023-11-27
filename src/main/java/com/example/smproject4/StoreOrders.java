@@ -13,7 +13,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-
+/**
+ * Define the data type StoreOrders.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class StoreOrders {
     private static int orderNumber = 1;
     private ArrayList<Order> storeOrders;

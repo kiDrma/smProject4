@@ -4,7 +4,11 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import java.util.ArrayList;
-
+/**
+ * Define the data type Pepperoni.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class Pepperoni extends Pizza{
     private final double BASE_PRICE = 10.99;
 

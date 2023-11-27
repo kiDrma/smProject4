@@ -1,10 +1,12 @@
 package com.example.smproject4;
-
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-
 import java.util.ArrayList;
-
+/**
+ * Define the data type Supreme.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class Supreme extends Pizza{
     private final double BASE_PRICE = 15.99;
 

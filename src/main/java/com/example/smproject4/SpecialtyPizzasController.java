@@ -17,7 +17,11 @@ import java.io.IOException;
 import java.net.URL;
 import java.text.DecimalFormat;
 import java.util.ResourceBundle;
-
+/**
+ * Controller for SpecialtyPizzas screen.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class SpecialtyPizzasController implements Initializable {
     private final double BLANK_PRICE = 0;
     private final String MEATZZA = "Meatzza";

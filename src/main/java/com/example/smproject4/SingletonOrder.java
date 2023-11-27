@@ -1,5 +1,9 @@
 package com.example.smproject4;
-
+/**
+ * Define singleton for global Order variable.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class SingletonOrder {
     private static SingletonOrder s;
     private static Order order;

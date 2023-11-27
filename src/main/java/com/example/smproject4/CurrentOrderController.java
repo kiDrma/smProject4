@@ -13,7 +13,11 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import java.util.ResourceBundle;
-
+/**
+ * Controller for CurrentOrder screen..
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class CurrentOrderController implements Initializable{
     private SingletonOrder order = SingletonOrder.getInstance();
     private SingletonStoreOrders storeOrders = SingletonStoreOrders.getInstance();
@@ -69,7 +73,6 @@ public class CurrentOrderController implements Initializable{
         listOfPizzas.setItems(FXCollections.observableArrayList(order.getOrder().getPizzaListBasicNames()));
         resetAllFields();
     }
-
 
     /**
      * Calculates the total cost of the order

@@ -1,7 +1,10 @@
 package com.example.smproject4;
 import java.util.ArrayList;
-
-
+/**
+ * Define the data type BuildYourOwn.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class BuildYourOwn extends Pizza{
     private final int TOPPINGS_INCLUDED = 3;
     private final double BASE_PRICE = 8.99;

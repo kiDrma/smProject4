@@ -15,7 +15,11 @@ import java.net.URL;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
-
+/**
+ * Controller for StoreOrders screen.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class StoreOrdersController implements Initializable{
     @FXML
     private ListView ordersList;

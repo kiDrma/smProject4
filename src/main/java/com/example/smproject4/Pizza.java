@@ -4,7 +4,11 @@ import javafx.collections.ObservableList;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-
+/**
+ * Define the abstract data type Pizza.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public abstract class Pizza {
     protected ArrayList<Topping> toppings; //Topping is a enum class
     protected Size size; //Size is a enum class

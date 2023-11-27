@@ -5,7 +5,11 @@ import javafx.collections.ObservableArray;
 import javafx.collections.ObservableList;
 
 import java.util.ArrayList;
-
+/**
+ * Define the data type Meatzza.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class Meatzza extends Pizza{
     private final double BASE_PRICE = 16.99;
 

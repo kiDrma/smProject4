@@ -13,8 +13,16 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
-
+/**
+ * Controller for MainMenu screen.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class MainMenuController {
+    /**
+     * Opens specialty pizza screen.
+     * @throws IOException
+     */
     @FXML
     protected void onOrderSpecialityClick() throws IOException{
         try {

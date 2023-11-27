@@ -1,5 +1,9 @@
 package com.example.smproject4;
-
+/**
+ * Define singleton for global StoreOrders variable.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class SingletonStoreOrders {
     private static SingletonStoreOrders s;
     private static StoreOrders storeOrders;

@@ -11,10 +11,17 @@ public class Order {
     private ArrayList<Pizza> pizzaList;
     private final double TAX_RATE = .0625;
 
+    /**
+     * Default constructor.
+     */
     public Order(){
         pizzaList = new ArrayList<>();
     }
 
+    /**
+     * Creates order with given order parameter.
+     * @param order
+     */
     public Order(Order order){
         this.pizzaList = new ArrayList<>(order.getPizzaList());
     }
@@ -87,14 +94,6 @@ public class Order {
         return list;
     }
 
-    public String getPizzaListBasicNamesToString(){
-        String pizzas = "";
-        for(Pizza pizza : pizzaList){
-            pizzas += pizza.getClass().getSimpleName() + "\n";
-        }
-        return pizzas;
-    }
-
     /**
      * Gets string of order details
      * @return the order as a readable string
@@ -121,7 +120,6 @@ public class Order {
         }
         return order;
     }
-
 
     /**
      * Clears pizzas in list

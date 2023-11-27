@@ -8,14 +8,26 @@ public class SingletonOrder {
     private static SingletonOrder s;
     private static Order order;
 
+    /**
+     * Returns the global order object.
+     * @return
+     */
     public Order getOrder(){
         return order;
     }
 
+    /**
+     * Sets the global order object.
+     * @param o
+     */
     public void setOrder(Order o){
         order = o;
     }
 
+    /**
+     * Returns the global singleton order; if there isn't one, makes one.
+     * @return
+     */
     public static synchronized SingletonOrder getInstance(){
         if(s == null){
             s = new SingletonOrder();

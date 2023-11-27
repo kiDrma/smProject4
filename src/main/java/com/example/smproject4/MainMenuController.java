@@ -38,6 +38,10 @@ public class MainMenuController {
         }
     }
 
+    /**
+     * Opens build your own screen.
+     * @throws IOException
+     */
     @FXML
     protected void onBuildYourOwnClick() throws IOException{
         try {
@@ -53,6 +57,10 @@ public class MainMenuController {
         }
     }
 
+    /**
+     * Opens current order screen.
+     * @throws IOException
+     */
     @FXML
     protected void onCurrentOrderClick() throws IOException{
         try {
@@ -68,6 +76,10 @@ public class MainMenuController {
         }
     }
 
+    /**
+     * Opens store orders screen.
+     * @throws IOException
+     */
     @FXML
     protected void onStoreOrdersClick() throws IOException{
         try {

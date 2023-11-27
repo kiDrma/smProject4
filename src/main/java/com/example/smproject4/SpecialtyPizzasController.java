@@ -64,6 +64,11 @@ public class SpecialtyPizzasController implements Initializable {
     @FXML
     private TextArea testOrderOutput;
 
+    /**
+     * Initializes the specialty pizzas screen with event handlers.
+     * @param url
+     * @param resourceBundle
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         ObservableList<String> pizzaOptions = FXCollections.observableArrayList(
@@ -86,6 +91,9 @@ public class SpecialtyPizzasController implements Initializable {
         comboBox.setOnAction(event);
     }
 
+    /**
+     * Displays current running total.
+     */
     @FXML
     protected void displayTotal(){
         String pizza = (String)comboBox.getValue();
@@ -101,12 +109,20 @@ public class SpecialtyPizzasController implements Initializable {
         total.setText("$" + newTotal);
     }
 
+    /**
+     * Displays the toppings of the selected pizza.
+     * @param pizza
+     */
     private void displayToppings(String pizza){
         PizzaMaker pizzaMaker = new PizzaMaker();
         Pizza newPizza = pizzaMaker.createPizza(pizza);
         toppingsList.setItems(newPizza.getToppings());
     }
 
+    /**
+     * Displays image of the current selected pizza.
+     * @param pizza
+     */
     private void displayPizzaImage(String pizza){
         resetImages();
         if(pizza.equals(MEATZZA)){
@@ -126,6 +142,9 @@ public class SpecialtyPizzasController implements Initializable {
         }
     }
 
+    /**
+     * Resets all images.
+     */
     private void resetImages(){
         emptyBox.setVisible(false);
         supremeImage.setVisible(false);
@@ -135,6 +154,9 @@ public class SpecialtyPizzasController implements Initializable {
         meatzzaImage.setVisible(false);
     }
 
+    /**
+     * Adds pizza to order when button selected.
+     */
     @FXML
     protected void onAddToOrderClick(){
         if(!validInput()){
@@ -149,6 +171,10 @@ public class SpecialtyPizzasController implements Initializable {
         testOrderOutput.appendText("Pizza added to order.\n");
     }
 
+    /**
+     * Checks if the user currently has a valid input for making a pizza.
+     * @return
+     */
     private boolean validInput(){
         if(getSize() == null){
             testOrderOutput.appendText("Please select a size.\n");
@@ -161,6 +187,11 @@ public class SpecialtyPizzasController implements Initializable {
         return true;
     }
 
+    /**
+     * Makes pizza using the selected inputs.
+     * @param pizzaSelected
+     * @return
+     */
     private Pizza makePizza(String pizzaSelected){
         PizzaMaker pizzaMaker = new PizzaMaker();
         Pizza newPizza = pizzaMaker.createPizza(pizzaSelected);
@@ -170,6 +201,10 @@ public class SpecialtyPizzasController implements Initializable {
         return newPizza;
     }
 
+    /**
+     * Gets the size of the pizza based on what button the user has selected.
+     * @return
+     */
     private Size getSize(){
         Size size = null;
         if(smallButton.isSelected()){

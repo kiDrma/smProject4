@@ -55,12 +55,6 @@ public class BuildYourOwnController {
             updatePrice();
             return;
         }
-        if(selectedToppings().size() < 3){
-            toppingsList.getItems().clear();
-            toppingsList.getItems().add("Select >=3 toppings!");
-            updatePrice();
-            return;
-        }
 
         for (javafx.scene.Node node : toppingsVBox.getChildren()) {
             if (node instanceof CheckBox) {
@@ -81,15 +75,16 @@ public class BuildYourOwnController {
         if(pizza == null){
             return 0.0;
         }
-        return pizza.price();
+        return pizza.getPrice();
     }
 
+    private final double TOPPING_PRICE = 1.49;
     /**
      * Updates displayed price
      */
     private void updatePrice(){
 
-        if(selectedToppings().size() > 7 || selectedToppings().size() <3) {
+        if(selectedToppings().size() > 7) {
             priceDisplay.clear();
             priceDisplay.appendText("Invalid");
             return;
@@ -98,7 +93,8 @@ public class BuildYourOwnController {
         priceDisplay.clear();
 
         DecimalFormat twoDecimals = new DecimalFormat("0.00");
-        String formattedValue = twoDecimals.format(tempPizza.price());
+        double price = price(tempPizza);
+        String formattedValue = twoDecimals.format(price);
 
         priceDisplay.appendText("$" + formattedValue);
     }

@@ -13,8 +13,16 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
-
+/**
+ * Controller for MainMenu screen.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class MainMenuController {
+    /**
+     * Opens specialty pizza screen.
+     * @throws IOException
+     */
     @FXML
     protected void onOrderSpecialityClick() throws IOException{
         try {
@@ -30,6 +38,10 @@ public class MainMenuController {
         }
     }
 
+    /**
+     * Opens build your own screen.
+     * @throws IOException
+     */
     @FXML
     protected void onBuildYourOwnClick() throws IOException{
         try {
@@ -45,6 +57,10 @@ public class MainMenuController {
         }
     }
 
+    /**
+     * Opens current order screen.
+     * @throws IOException
+     */
     @FXML
     protected void onCurrentOrderClick() throws IOException{
         try {
@@ -60,6 +76,10 @@ public class MainMenuController {
         }
     }
 
+    /**
+     * Opens store orders screen.
+     * @throws IOException
+     */
     @FXML
     protected void onStoreOrdersClick() throws IOException{
         try {

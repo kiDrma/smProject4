@@ -4,7 +4,11 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import java.util.ArrayList;
-
+/**
+ * Define the data type Deluxe.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class Deluxe extends Pizza{
     private final double BASE_PRICE = 14.99;
 

@@ -4,7 +4,11 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import java.util.ArrayList;
-
+/**
+ * Define the data type Seafood.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class Seafood extends Pizza{
     private final double BASE_PRICE = 17.99;
 

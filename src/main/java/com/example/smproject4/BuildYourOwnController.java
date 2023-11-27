@@ -7,7 +7,11 @@ import javafx.scene.layout.VBox;
 
 
 import java.util.ArrayList;
-
+/**
+ * Controller for BuildYourOwn screen.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class BuildYourOwnController {
 
     /**

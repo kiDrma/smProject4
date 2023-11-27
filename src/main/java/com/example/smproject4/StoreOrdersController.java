@@ -15,7 +15,11 @@ import java.net.URL;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
-
+/**
+ * Controller for StoreOrders screen.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class StoreOrdersController implements Initializable{
     @FXML
     private ListView ordersList;
@@ -28,6 +32,11 @@ public class StoreOrdersController implements Initializable{
 
     private SingletonStoreOrders s = SingletonStoreOrders.getInstance();
 
+    /**
+     * Initializes the store orders screen with event handlers.
+     * @param url
+     * @param resourceBundle
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         String zero = new DecimalFormat("0.00").format(0);
@@ -56,11 +65,18 @@ public class StoreOrdersController implements Initializable{
         });
     }
 
+    /**
+     * Exports the store orders.
+     */
+    @FXML
     public void export(){
         StoreOrders storeOrders = s.getStoreOrders();
         storeOrders.export();
     }
 
+    /**
+     * Cancels an order.
+     */
     @FXML
     protected void cancelOrder(){
         int index = ordersList.getSelectionModel().getSelectedIndex();
@@ -73,6 +89,9 @@ public class StoreOrdersController implements Initializable{
         resetAllScreens();
     }
 
+    /**
+     * Resets all fields to default values.
+     */
     private void resetAllScreens(){
         ordersList.setItems(FXCollections.observableArrayList(s.getStoreOrders().getOrderNumbers()));
         pizzasList.getItems().clear();

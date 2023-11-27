@@ -7,7 +7,9 @@ import java.util.Arrays;
 import static org.junit.Assert.*;
 
 /**
- * JUnit test method for testing the BuildYourOwn's price() method.
+ * JUnit test class for testing BuildYourOwn's price() method.
+ * @KimberlyDonnarumma
+ * @DanielZhang
  */
 public class BuildYourOwnTest {
     private ArrayList<Topping> NO_TOPPINGS = new ArrayList<>();

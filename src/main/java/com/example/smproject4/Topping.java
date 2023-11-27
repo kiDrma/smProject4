@@ -1,5 +1,9 @@
 package com.example.smproject4;
-
+/**
+ * Define the enum Topping.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public enum Topping {
     SAUSAGE,
     PEPPERONI,

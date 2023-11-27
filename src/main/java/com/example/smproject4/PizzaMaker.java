@@ -1,7 +1,11 @@
 package com.example.smproject4;
 
 import java.util.ArrayList;
-
+/**
+ * Factory method class for creating a new instance of Pizza.
+ * @KimberlyDonnarumma
+ * @DanielZhang
+ */
 public class PizzaMaker {
     private static final String CUSTOM = "Custom";
     private static final String DELUXE = "Deluxe";

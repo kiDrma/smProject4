@@ -35,4 +35,11 @@ public class SingletonStoreOrders {
     public void addOrder(Order order){
         storeOrders.addOrder(order);
     }
+
+    /**
+     * Resets global store order.
+     */
+    public void resetStoreOrders(){
+        storeOrders = new StoreOrders();
+    }
 }

@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4220f52-c33c-4080-a1c5-9355024c38b2" name="Changes" comment="basic name change">
+    <list default="true" id="b4220f52-c33c-4080-a1c5-9355024c38b2" name="Changes" comment="names">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Pizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/SingletonStoreOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/SingletonStoreOrders.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/StoreOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/StoreOrders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/StoreOrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/StoreOrdersController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +214,63 @@
       <option name="project" value="LOCAL" />
       <updated>1701108427724</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="export">
+      <option name="closed" value="true" />
+      <created>1701118888370</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1701118888371</updated>
+    </task>
+    <task id="LOCAL-00014" summary="names">
+      <option name="closed" value="true" />
+      <created>1701119397552</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1701119397552</updated>
+    </task>
+    <task id="LOCAL-00015" summary="names">
+      <option name="closed" value="true" />
+      <created>1701119571928</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701119571928</updated>
+    </task>
+    <task id="LOCAL-00016" summary="names">
+      <option name="closed" value="true" />
+      <created>1701119765743</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701119765743</updated>
+    </task>
+    <task id="LOCAL-00017" summary="names">
+      <option name="closed" value="true" />
+      <created>1701119846141</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701119846141</updated>
+    </task>
+    <task id="LOCAL-00018" summary="names">
+      <option name="closed" value="true" />
+      <created>1701119937681</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701119937681</updated>
+    </task>
+    <task id="LOCAL-00019" summary="names">
+      <option name="closed" value="true" />
+      <created>1701120047424</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1701120047424</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -223,6 +286,8 @@
     <MESSAGE value="image buttons done" />
     <MESSAGE value="JUnit done" />
     <MESSAGE value="basic name change" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic name change" />
+    <MESSAGE value="export" />
+    <MESSAGE value="names" />
+    <option name="LAST_COMMIT_MESSAGE" value="names" />
   </component>
 </project>

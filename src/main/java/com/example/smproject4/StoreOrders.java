@@ -115,7 +115,7 @@ public class StoreOrders {
                         System.out.println("test");
                         return;
                     }
-                    exportedFilesCount++;
+                    //exportedFilesCount++;
                 }
                 fileWriter.close();
             } catch (IOException e) {

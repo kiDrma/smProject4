@@ -72,6 +72,8 @@ public class StoreOrdersController implements Initializable{
     public void export(){
         StoreOrders storeOrders = s.getStoreOrders();
         storeOrders.export();
+        s.resetStoreOrders();
+        resetAllScreens();
     }
 
     /**

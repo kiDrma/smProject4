@@ -20,6 +20,10 @@ public abstract class Pizza {
     protected double LARGE_PRICE_INCREASE = 4;
     protected double EXTRA_PRICE_INCREASE = 1;
 
+    /**
+     * Returns price of the pizza.
+     * @return
+     */
     public abstract double price(); //polymorphism
 
     /**

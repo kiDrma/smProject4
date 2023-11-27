@@ -73,7 +73,12 @@ public class Order {
     public ArrayList<String> getPizzaListBasicNames(){
         ArrayList<String> list = new ArrayList<>();
         for(Pizza pizza : pizzaList){
-            list.add(pizza.getClass().getSimpleName());
+            if(pizza instanceof BuildYourOwn){
+                list.add("Custom");
+            }
+            else{
+                list.add(pizza.getClass().getSimpleName());
+            }
         }
         return list;
     }

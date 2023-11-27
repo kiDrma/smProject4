@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4220f52-c33c-4080-a1c5-9355024c38b2" name="Changes" comment="image buttons done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/BuildYourOwnTest.java" afterDir="false" />
+    <list default="true" id="b4220f52-c33c-4080-a1c5-9355024c38b2" name="Changes" comment="JUnit done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/BuildYourOwnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/BuildYourOwnController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Custom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/BuildYourOwn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/PizzaMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/PizzaMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smproject4/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +66,7 @@
       <recent name="com.example.smproject4" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BuildYourOwnTest">
+  <component name="RunManager" selected="Application.MainMenuApplication">
     <configuration name="MainMenuApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.smproject4.MainMenuApplication" />
       <module name="smProject4" />
@@ -102,8 +97,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BuildYourOwnTest" />
         <item itemvalue="Application.MainMenuApplication" />
+        <item itemvalue="JUnit.BuildYourOwnTest" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700876590209</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="JUnit done">
+      <option name="closed" value="true" />
+      <created>1701108199562</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701108199562</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -210,6 +213,7 @@
     <MESSAGE value="some stuff idk lol" />
     <MESSAGE value="some imag button" />
     <MESSAGE value="image buttons done" />
-    <option name="LAST_COMMIT_MESSAGE" value="image buttons done" />
+    <MESSAGE value="JUnit done" />
+    <option name="LAST_COMMIT_MESSAGE" value="JUnit done" />
   </component>
 </project>

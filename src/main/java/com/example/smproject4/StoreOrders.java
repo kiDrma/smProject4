@@ -23,31 +23,49 @@ public class StoreOrders {
     private ArrayList<Order> storeOrders;
     private ArrayList<Integer> orderNumbers;
 
+    /**
+     * Default constructor
+     */
     public StoreOrders() {
         storeOrders = new ArrayList<>();
         orderNumbers = new ArrayList<>();
     }
 
+    /**
+     * Adds an order to the store orders.
+     * @param order
+     */
     public void addOrder(Order order) {
         storeOrders.add(order);
         orderNumbers.add(orderNumber);
         orderNumber++;
     }
 
+    /**
+     * Removes an order from the store orders.
+     * @param order
+     * @param orderNumber
+     */
     public void removeOrder(Order order, int orderNumber) {
         storeOrders.remove(order);
         orderNumbers.remove((Integer) orderNumber);
     }
 
+    /**
+     * Returns order numbers.
+     * @return order numbers.
+     */
     public ArrayList<Integer> getOrderNumbers() {
         return orderNumbers;
     }
 
+    /**
+     * Returns orders.
+     * @return orders.
+     */
     public ArrayList<Order> getOrders() {
         return storeOrders;
     }
-
-    private static int exportedFilesCount = 0;
 
     /**
     @FXML
